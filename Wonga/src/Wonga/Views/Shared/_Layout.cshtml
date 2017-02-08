@@ -1,0 +1,38 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>What is bloody title - @ViewBag.Title</title>
+    <meta charset="utf-8" />
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/lib/bootswatch/yeti/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/rzslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    
+
+</head>
+<body class="bloody-wrapper background-image">
+
+    <div class="container-fluid">
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">&copy; @DateTime.Now.Year - Improvisation based on Wonga.com</span>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    @RenderSection("scripts", false)
+
+</body>
+</html>

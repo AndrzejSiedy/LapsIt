@@ -1,0 +1,41 @@
+﻿<div class="row row-padding">
+    <div class="col-md-2">
+        <div class="text-container">
+            <div class="text-inner-container messages-mid">
+                <div>Borrowing</div>
+                <div class="text-container">£{{borrowing}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="text-container">
+            <div class="text-inner-container messages-mid">
+                <p class="text-container">+</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="text-container">
+            <div class="text-inner-container messages-mid">
+                <div>Interest</div>
+                <div class="text-container">£{{interest | number:2}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="text-container">
+            <div class="text-inner-container messages-mid">
+                <p class="text-container">=</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="text-inner-container messages-mid">
+            <div>Total to repay</div>
+            <div class="text-container">£{{total | number:2}}</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="btn btn-lg btn-warning">Apply now</div>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+﻿@section Scripts{
+    <script src="~/lib/underscore/underscore-min.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/6.0.0/rzslider.min.js"></script>
+    <script src="~/app/app-wonga.js"></script>
+    <script src="~/app/calculatorController.js"></script>
+    <script src="~/app/directives/customControls.js"></script>
+    <script src="~/app/directives/cash.js"></script>
+    <script src="~/app/directives/time.js"></script>
+    <script src="~/app/directives/slider.js"></script>
+    <script src="~/app/directives/summary.js"></script>
+}
+<div ng-app="app-wonga" ng-cloak>
+
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>
+                                Wonga Short Term Loans – bridge the gap until payday
+                                We can send Short Term Loans from £50 - £400 within 5 minutes of approval.
+                            </h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>
+                                Is Wonga right for you?
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="calculator-container" ng-controller="calculator as calc">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 non-transparent">
+
+                    <div class="row is-flex margin-top-15">
+                        <div class="col-md-8 col-padding">
+
+                            <as-cash cash="calc.sliderCash.value"></as-cash>
+                            <as-slider value="calc.sliderCash.value" options="calc.sliderCash.options"></as-slider>
+                            <div class="row row-padding"></div>
+                            <as-time time="calc.sliderTime.value"></as-time>
+                            <as-slider value="calc.sliderTime.value" options="calc.sliderTime.options"></as-slider>
+                            <as-summary borrowing="calc.sliderCash.value" interest="calc.interest" total="calc.total"></as-summary>
+
+                        </div>
+                        <div class="col-md-4 col-padding" style="background-color:rgba(11, 164, 208, 1);height:100%;">
+                            <p>
+                                Introducing our new
+                                3 month Flexi Loan
+                            </p>
+
+                            <p>
+                                Borrow from £150 to £500*
+                                3 monthly instalments
+                                Choose your repayment dates
+                                Find out more
+                            </p>
+
+                            <p>
+                                *£1,500 for existing customers
+                                Representative 1,286% APR
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <div class="row row-padding">
+                        <div class="col-md-6 non-transparent">
+                            <h3>Representative example</h3>
+                            <table style="width:100%">
+                                <tbody>
+                                    <tr><td>Borrow</td><td class="call-me-orange">£200 for 14 days</td></tr>
+                                    <tr><td>Interest rate</td><td class="call-me-orange">292% pa (fixed)</td></tr>
+                                    <tr><td>One repayment of</td><td class="call-me-orange">£222.40</td></tr>
+                                    <tr><td>Representative</td><td class="call-me-orange">1,509% APR</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12 font-white ">
+                                    If you don't repay on time there will be extra costs:
+                                </div>
+                            </div>
+                            <div class="row row-padding">
+                                <div class="col-md-6 messages-small font-white">
+                                    Missed payment fee
+                                    <p class="messages-mid font-white ">£15.00</p>
+                                    Charged at 11pm on the third day after your repayment date
+                                </div>
+                                <div class="col-md-6 messages-small font-white ">
+                                    Late interest
+                                    <p class="messages-mid font-white ">0.8% per day</p>
+                                    Interest will continue to be charged up to a maximum of 30 days from your repayment date
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
