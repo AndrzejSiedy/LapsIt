@@ -12,33 +12,33 @@ body {
 }
 
 
-.messages-big{
+.messages-big {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-	font-size: 23px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 300;
-	line-height: 26px;
+    font-size: 23px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 26px;
     color: rgba(12, 10, 10, 0.8) !important;
 }
 
-.messages-mid{
+.messages-mid {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 300;
-	line-height: 23px;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 23px;
     color: rgba(12, 10, 10, 0.8) !important;
 }
 
-.messages-small{
+.messages-small {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-	font-size: 15px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 17px;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 17px;
     color: rgba(12, 10, 10, 0.8) !important;
 }
 
@@ -56,15 +56,15 @@ body {
 
 
 .text-container {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
 }
 
 .text-inner-container {
-	display: table-cell;
-	vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
@@ -101,22 +101,54 @@ em {
     display: none !important;
 }
 
-
-
-
-
 .rz-bubble {
     visibility: hidden !important;
     display: none !important;
 }
 
-.message-font{
+.message-font {
     font-size: 24px;
     font-weight: 400 !important;
     line-height: 1em;
 }
 
-.plus{
+.custom-slider.rzslider .rz-bar {
+    height: 15px;
+}
+
+.custom-slider.rzslider .rz-selection {
+    background: rgba(0, 143, 213, 1);
+}
+
+
+.custom-slider.rzslider .rz-pointer {
+    outline: none;
+    top: -23px;
+    display: compact;
+    width: 58px;
+    height: 59px;
+    background-color: rgba(0,0,0,0);
+    background-image: url('../img/toolkit.png');
+    background-position: -67px 0;
+}
+
+.custom-slider.rzslider .rz-pointer:hover {
+    outline: none;
+    top: -23px;
+    display: compact;
+    width: 58px;
+    height: 59px;
+    background-color: rgba(0,0,0,0);
+    background-image: url('../img/toolkit.png');
+    background-position: -2px 0;
+}
+
+
+.extra-margin-for-slider{
+    height: 72px; 
+}
+
+.plus {
     margin-top: 15px;
     border-radius: 20px;
     display: compact;
@@ -125,17 +157,18 @@ em {
     background-image: url('../img/toolkit.png');
     background-position: -130px 0px;
 }
-.plus:hover{
-    margin-top: 15px;
-    border-radius: 20px;
-    display: compact;
-    width: 40px;
-    height: 50px;
-    background-image: url('../img/toolkit.png');
-    background-position: -210px 0px;
-}
 
-.minus{
+    .plus:hover {
+        margin-top: 15px;
+        border-radius: 20px;
+        display: compact;
+        width: 40px;
+        height: 50px;
+        background-image: url('../img/toolkit.png');
+        background-position: -210px 0px;
+    }
+
+.minus {
     margin-top: 15px;
     border-radius: 20px;
     display: compact;
@@ -145,51 +178,51 @@ em {
     background-position: -170px 0px;
 }
 
-.minus:hover{
-    margin-top: 15px;
-    border-radius: 20px;
-    display: compact;
-    width: 40px;
-    height: 50px;
-    background-image: url('../img/toolkit.png');
-    background-position: -250px 0px;
-}
+    .minus:hover {
+        margin-top: 15px;
+        border-radius: 20px;
+        display: compact;
+        width: 40px;
+        height: 50px;
+        background-image: url('../img/toolkit.png');
+        background-position: -250px 0px;
+    }
 
-.row-padding{
+.row-padding {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.non-transparent{
-    border:1px solid #cecece;
-    background-color:rgba(250, 250, 250, 1);
+.non-transparent {
+    border: 1px solid #cecece;
+    background-color: rgba(250, 250, 250, 1);
 }
 
 /**
     this section is to make sure all columns in row are the same height
 */
-.row [class*="col-"]{
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
+.row [class*="col-"] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
 
-.row{
-  overflow: hidden; 
+.row {
+    overflow: hidden;
 }
 
-.margin-top-15{
-    margin-top:15px;
+.margin-top-15 {
+    margin-top: 15px;
 }
 
-.calculator-container{
-    height:400px;
-    width:100%;
+.calculator-container {
+    height: 400px;
+    width: 100%;
 }
 
-.call-me-orange{
+.call-me-orange {
     color: rgba(247, 144, 47, 1);
 }
 
-.font-white{
+.font-white {
     color: white !important;
 }
