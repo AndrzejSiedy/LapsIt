@@ -41,15 +41,6 @@
             calulateInterest();
         });
 
-        // bind to time slider change
-        // time input change will automatically trigger vm.sliderCash.value change, so it will be intercepted also
-        $scope.$watch(function () {
-            return vm.sliderTime.value;
-        }, function () {
-            // do calculation here
-            calulateInterest();
-        });
-
         vm.sliderTime = {
             value: 16,
             options: {
@@ -59,6 +50,17 @@
                 showSelectionBar: true
             }
         };
+
+        // bind to time slider change
+        // time input change will automatically trigger vm.sliderTime.value change, so it will be intercepted also
+        $scope.$watch(function () {
+            return vm.sliderTime.value;
+        }, function () {
+            // do calculation here
+            calulateInterest();
+        });
+
+        
 
         function calulateInterest() {
             vm.interest = vm.sliderCash.value * vm.daily * vm.sliderTime.value;

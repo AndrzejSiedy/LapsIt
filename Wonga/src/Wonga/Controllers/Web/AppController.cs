@@ -17,10 +17,6 @@ namespace Wonga.Controllers.Web
             return View();
         }
 
-        public IActionResult Header()
-        {
-            return View();
-        }
 
     }
 }
